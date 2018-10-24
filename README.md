@@ -6,11 +6,6 @@ install python 3
 
 ## macOS
 
-```
-$ python3 -m venv env
-$ . env /bin/activate 
-```
-
 ```.vscode/setting.json```
 
 ```json
@@ -19,21 +14,30 @@ $ . env /bin/activate
 }
 ```
 
-## Windows
+run venv
+
 ```
-> python -m venv env
+$ python3 -m venv env
+$ . env /bin/activate 
 ```
 
+## Windows
 ```.vscode/setting.json```
 
 ```json
 {
-    "python.pythonPath": "${workspaceFolder}\\env\\Scripts\\python.exe"
+    "python.pythonPath": "${workspaceFolder}\\env\\Scripts\\python.exe",
+    "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 }
+```
+run venv
+```
+PS1> python -m venv env
+PS1> .\env\Scripts\activate
 ```
 
 
-## pip install
+# pip install
 ```
 (env)$ pip install numpy
 ```
