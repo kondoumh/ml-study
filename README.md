@@ -32,8 +32,8 @@ $ . env /bin/activate
 ```
 run venv
 ```
-PS1> python -m venv env
-PS1> .\env\Scripts\activate
+PS> python -m venv env
+PS> .\env\Scripts\activate
 ```
 
 
