@@ -1,8 +1,14 @@
 Project for Machine Learning Study
 =====================================
 
-# enable virtual env
-install python 3
+# Enable Python venv
+
+First of all install python 3.
+
+```
+$ cd /your/project/path
+$ python3 -m venv env
+```
 
 ## macOS
 
@@ -10,14 +16,13 @@ install python 3
 
 ```json
 {
-    "python.pythonPath": "env/bin/python"
+    "python.pythonPath": "${workspaceFolder}/env/bin/python"
 }
 ```
 
 run venv
 
 ```
-$ python3 -m venv env
 $ . env /bin/activate 
 ```
 
@@ -30,14 +35,13 @@ $ . env /bin/activate
     "terminal.integrated.shell.windows": "C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe"
 }
 ```
-run venv
+activate venv
 ```
 PS> python -m venv env
 PS> .\env\Scripts\activate
 ```
 
-
-# pip install
+# Install Python packages
 ```
 (env)$ pip install numpy
 ```
