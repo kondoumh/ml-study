@@ -95,5 +95,5 @@ ENV/
 
 .vscode
 
-
-
+# dataset cache
+*.gz
